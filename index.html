@@ -10,27 +10,36 @@
 		
 	<body>
 		<div class="menu">
-			<!-- Make A Decent Menu Here -->
-			<a class="active" href="index.html">Home</a>
-            <a href="AboutMe.html">About Me</a>
-			<a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contact</a>
-
+			<div class="menu-left">
+				<h1>Huda AlBaqali's Website</h1>
+			</div>
+			
+			<div class="menu-right">
+				<a class="active" href="index.html"> <button> Home </button></a>
+				<a href="AboutMe.html"> <button>About Me</button></a>
+				<a href="Projects.html"> <button>Projects</button></a>
+				<a href="Contact.html"> <button>Contact</button></a>
+			</div>
+			
 		</div>
 
 		<!-- First thing visitors to the site will see, make it memorable -->
 		<div class="header">
 			<div class="col-12 col-s-12">
-				<h1 id="greet">Hello Visitor!</h1>
-				<h2>Welcome to my website, here's what you should expect to see...</h2>
+				<h1>Hello Visitor!</h1>
+				<h3>Welcome to my website, here's what you should expect to see...</h3>
 			</div>
-			
+		</div>
+
+		<div class="content1">
+			<h2>Here's a little about me</h2>
+			<p>I'm a Business IT Student</p>
 		</div>
 
 		<!-- Test -->
 		<!-- Tab links -->
 		<div class="tab">
-			<button class="tablinks" onclick="openTab(event, 'Volunteer')">Volunteering</button>
+			<button class="tablinks" onclick="openTab(event, 'Volunteer')" id="defaultOpen">Volunteering</button>
 			<button class="tablinks" onclick="openTab(event, 'Work')">Work Experience</button>
 			<button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
 			<button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
@@ -39,22 +48,22 @@
 		<!-- Tab content -->
 		 <div id="Volunteer" class="tabcontent">
 			<h3>Volunteering Experience</h3>
-			<p>London is the capital city of England.</p>
+			<p>Volunteer Preview Here</p>
 		 </div>
   
 		 <div id="Work" class="tabcontent">
 			<h3>Work Experience</h3>
-			<p>Paris is the capital of France.</p>
+			<p>Work Experience Preview Here</p>
 		</div>
 
 		<div id="Skills" class="tabcontent">
 			<h3>Skills Here</h3>
-			<p>Tokyo is the capital of Japan.</p>
+			<p>Skills Preview Here</p>
 		</div>
 
 		<div id="Projects" class="tabcontent">
 			<h3>Projects</h3>
-			<p>Projects Here</p>
+			<p>Projects Review Here</p>
 		</div>
 
 		<!-- JavaScript for Tabs-->
@@ -75,16 +84,16 @@
 			  document.getElementById(Name).style.display = "block";
 			  evt.currentTarget.className += " active";
 			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
 		</script>
 
 		<!-- The Social Section -->
 		<!-- Maybe put it on the top of the site? -->
 		<div class="bar">
 			<h2>My Social Links</h2>
-			<p>Twitter</p>
-			<p>LinkedIn</p>
-			<p>Instagram</p>
-			<p>Goodreads</p>
+			<p>Twitter - LinkedIn - Instagram - Goodreads </p>
 			</div>
 
 		

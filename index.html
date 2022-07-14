@@ -30,10 +30,10 @@
 		<!-- Test -->
 		<!-- Tab links -->
 		<div class="tab">
-			<button class="tablinks" onclick="openCity(event, 'London')">Volunnteering</button>
-			<button class="tablinks" onclick="openCity(event, 'Paris')">Work Experience</button>
-			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Skills</button>
-			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Projects</button>
+			<button class="tablinks" onclick="openTab(event, 'Volunteer')">Volunteering</button>
+			<button class="tablinks" onclick="openTab(event, 'Work')">Work Experience</button>
+			<button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+			<button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
 		</div>
   
 		<!-- Tab content -->
@@ -56,10 +56,10 @@
 			<h3>Projects</h3>
 			<p>Projects Here</p>
 		</div>
-		
+
 		<!-- JavaScript for Tabs-->
 		<script>
-			function openCity(evt, cityName) {
+			function openTab(event, Name) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent");
 			  for (i = 0; i < tabcontent.length; i++) {
@@ -70,9 +70,9 @@
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			  }
 			  document.getElementById(cityName).style.display = "block";
-			  evt.currentTarget.className += " active";
+			  event.currentTarget.className += " active";
 			}
-			</script>
+		</script>
 
 		<!-- The Social Section -->
 		<!-- Maybe put it on the top of the site? -->

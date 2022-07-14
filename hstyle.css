@@ -29,22 +29,29 @@ hr{
 
 /* Content Padding*/
 .header {
-    background-color: darkolivegreen;
+    background-color: lightcoral;
     padding: 20px;
     text-align: left;
     font-size: 20px;
 }
 
 .bar {
-    background-color: darkolivegreen;
+    background-color: lightcoral;
     padding: 5px;
     text-align: center;
     font-size: 15px;
+    width: 100%;
 }
 
 .column {
     float: center;
     width: 33.33%;
+    padding: 20px;
+}
+
+.columns {
+    float: center;
+    width: 100%;
     padding: 20px;
 }
 

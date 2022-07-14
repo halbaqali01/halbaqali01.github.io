@@ -1,10 +1,50 @@
-/* Default Body Settings*/
+/* Default Body Style Settings*/
 body{
     background-color: blanchedalmond;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Divider Settings */
+/* Divider Style Settings */
 hr{
     color: black;
+}
+
+/* Menu Style Settings */
+.menu {
+    width: 100%;
+    background-color: saddlebrown;
+    overflow: auto;
+}
+.menu a.active {
+    background-color:darkolivegreen;
+}
+
+/* Search Bar Style Settings */
+.menu input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 17px;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background: darkolivegreen;
+    color: bisque;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+.menu .search-container button:hover {
+    background: darkslategray;
+    color: bisque;
 }

@@ -31,7 +31,7 @@ hr{
 .header {
     background-color: blanchedalmond;
     padding: 20px;
-    text-align: right;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -43,9 +43,9 @@ hr{
 }
 
 .column {
-    float: left;
+    float: center;
     width: 33.33%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .row{

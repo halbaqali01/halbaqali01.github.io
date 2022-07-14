@@ -52,13 +52,28 @@
 			<p>Tokyo is the capital of Japan.</p>
 		</div>
 
-		<script src="bodyScript.js"></script>
-
 		<div id="Projects" class="tabcontent">
 			<h3>Projects</h3>
 			<p>Projects Here</p>
 		</div>
 		
+		<!-- JavaScript for Tabs-->
+		<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			</script>
+
 		<!-- The Social Section -->
 		<!-- Maybe put it on the top of the site? -->
 		<div class="bar">

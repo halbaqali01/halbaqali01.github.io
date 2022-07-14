@@ -14,6 +14,7 @@ hr{
     width: 100%;
     background-color: burlywood;
     overflow: auto;
+    padding-bottom: 10px;
 }
 .menu a {
     float: left;

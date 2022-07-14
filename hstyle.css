@@ -29,15 +29,15 @@ hr{
 
 /* Content Padding*/
 .header {
-    background-color: #f1f1f1;
+    background-color: blanchedalmond;
     padding: 30px;
     text-align: center;
     font-size: 35px;
 }
 
 .bar {
-    background-color: #f1f1f1;
-    padding: 10px;
+    background-color: blanchedalmond;
+    padding: 5px;
     text-align: center;
     font-size: 15px;
 }
@@ -46,7 +46,6 @@ hr{
     float: left;
     width: 33.33%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .row{

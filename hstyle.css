@@ -14,7 +14,6 @@ hr{
     width: 100%;
     background-color: burlywood;
     overflow: auto;
-    padding-bottom: 10px;
 }
 .menu a {
     float: left;
@@ -51,8 +50,8 @@ hr{
 
 .columns {
     float: center;
-    width: 95%;
-    padding: 20px;
+    width: 100%;
+    padding: 30px;
 }
 
 .row{

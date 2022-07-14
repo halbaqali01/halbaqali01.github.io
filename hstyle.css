@@ -47,11 +47,12 @@ hr{
     float: center;
     width: 33.33%;
     padding: 20px;
+    height: 200px
 }
 
 .columns {
     float: center;
-    width: 100%;
+    width: 95%;
     padding: 20px;
 }
 

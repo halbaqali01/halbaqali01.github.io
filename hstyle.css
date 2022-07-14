@@ -27,6 +27,14 @@ hr{
     background-color:darkolivegreen;
 }
 
+/* Content Padding*/
+.row{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
 /* Making a Responsive Grid */
 /* For mobile phones: */
 [class*="col-"] {

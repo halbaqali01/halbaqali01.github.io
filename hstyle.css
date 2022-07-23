@@ -4,6 +4,35 @@ body{
     font-family: 'Times New Roman', Times, serif;
     animation: fadeEffect 2s;
     color: #583101;
+    position: absolute;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: justify;
+}
+/*********************************************/
+/* Scrollbar Settings */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFEDD8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BC8A5F;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6F4518;
 }
 /*********************************************/
 /* Landing Page Settings */
@@ -11,9 +40,27 @@ body{
 
 
 /*********************************************/
-/* Alternative Menu Design*/
-/* The Overlay (background) */
+/* Menu Design*/
+.menu {
+  background-color: #D4A276;
+    color:  #FFEDD8;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+}
+.menu-right{
+    color: #6F4518;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
+.menu-left{
+  color: #6F4518;
+  text-align: left;
+}
+
+/* The Overlay (background) */
 /* Position the content inside the overlay */
 .overlay {
   height: 0%;
@@ -71,36 +118,24 @@ body{
 
 /*********************************************/
 /* Header Style Settings */
-.header {
-  background-color: #D4A276;
-    color:  #FFEDD8;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    text-align: left;
-    margin-top: 30px;
-}
-.header-right{
-    color: #6F4518;
-    margin-top: 10px;
-    margin-right: 10px;
+.header{
+  text-align: center;
+  width: 100%;
 }
 
-.header-left{
-  color: #6F4518;
-  text-align: left;
-  margin-left: 10px;
-}
 
-.header p{
-  font-size: 15px;
-}
+/*********************************************/
 /* Footer Style Settings */
 .bar {
-    padding: 5px;
-    text-align: center;
-    margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #D4A276;
+  color:  #FFEDD8;
 }
+
+
 /*********************************************/
 /* Content Style Settings*/
 .content{
@@ -108,7 +143,8 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     text-align: left;
-    display: table;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -117,8 +153,11 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     text-align: left;
-    display: table-cell;
+    display: block;
     width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
 }
 
 .column a {
@@ -152,9 +191,8 @@ body{
   overflow: hidden;
   background-color: #D4A276;
   border: 2px solid #8B5E34;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #FFEDD8;
-  border-radius: 20px;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -168,7 +206,7 @@ body{
     background-color: #D4A276;
     color: #FFEDD8;
     width: 25%;
-    font-size: 15px;
+    font-size: 17px;
   }
   
   /* Change background color of buttons on hover */
@@ -189,7 +227,7 @@ body{
   .tabcontent {
     overflow: hidden;
     border: 2px solid #8B5E34;
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: #D4A276;
     color: #FFEDD8;
     padding: 6px 12px;
@@ -204,36 +242,45 @@ body{
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+
 /*********************************************/
 /* Adjust Screen Optimisation */
 @media screen and (max-width: 600px) {
-  .menu a{
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
-
-  .menu .column{
-    display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
-
   .column a{
     float: none;
     display: block;
-    width: fit-content;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    text-align: left;
+    overflow-y: auto;
   }
 
   .column{
     display: block;
     width: 100%;
+    overflow-y: auto;
   }
 
   .body{
     display: block;
     width: 100%;
+    overflow-y: auto;
+  }
+  .tab button{
+    float: inline-end;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: fit-content; 
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
 }

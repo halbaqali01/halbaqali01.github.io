@@ -1,11 +1,9 @@
 /* Default Body Style Settings*/
 body{
-    background-color: #9067c6ff;
+    background-color: #F3D5B5;
     font-family: 'Times New Roman', Times, serif;
     animation: fadeEffect 2s;
-    padding: 30px;
-    border: 10px #e9d2f4ff;
-    color: #242038ff;
+    color: #583101;
 }
 /*********************************************/
 /* Landinng Pa Settings */
@@ -15,24 +13,20 @@ body{
 /* Menu Style Settings */
 .menu {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #e9d2f4ff;
-    color: #9067c6ff;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border: 5px solid #242038ff;
+    background-color: #D4A276;
+    color: #FFEDD8;
+    border: 5px solid #8B5E34;
     border-radius: 20px;
 }
 
 .menu a {
-    background-color: #e9d2f4ff ;
-    color: #242038ff;
+    background-color: #D4A276 ;
+    color: #FFEDD8;
     float: center;
     border: none ;
     outline: none;
     cursor: pointer;
-    padding: 12px 14px;
-    margin-top: 10px;
+    padding: 6px 12px;
     transition: 0.3s;
     font-family: inherit;
     font-size: inherit;
@@ -41,13 +35,13 @@ body{
 }
 
 .menu a:hover{
-    background-color: #242038ff;
+    background-color: #BC8A5F;
     color: #e9d2f4ff;
 }
 
 .menu a.active {
-    background-color: #242038ff;
-    color: #f2d0a4ff;
+    background-color: #BC8A5F;
+    color: #FFEDD8;
 }
 
 .menu-right{
@@ -59,21 +53,20 @@ body{
 .menu-left{
     float: left;
     font-size: 15px;
-    padding-left: 15px;
+    margin-left: 25px;
 }
 /*********************************************/
 /* Header Style Settings */
 .header {
-    background-color: #e9d2f4ff;
-    color:  #242038ff;
+    color:  #6F4518;
     padding: 10px;
     margin-bottom: 10px;
-    border: 5px solid #242038ff;
     border-radius: 20px;
     text-align: left;
+    margin-top: 30px;
 }
 .header h1{
-    color: #9067c6ff;
+    color: #6F4518;
     font-size: 50px;
     text-align: center;
 }
@@ -93,67 +86,63 @@ body{
 /*********************************************/
 /* Content Style Settings*/
 .content1{
-    background-color: #e9d2f4ff;
-    padding: 20px;
-    margin-top: 10px;
+  color:  #6F4518;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 5px solid #242038ff;
-    border-radius: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .content1 h2{
-  font-size: 30px;
+  color: #6F4518;
+  text-align: left;
 }
 
 /*********************************************/
 /* Style the middle tab section */
 .tab {
-    overflow: hidden;
-    border: 1px solid #9067c6ff;
-    background-color: #e9d2f4ff;
-    border: 5px solid #242038ff;
-    border-radius: 20px;
+  overflow: hidden;
+  background-color: #D4A276;
+  color: #FFEDD8;
+  border: 5px solid #8B5E34;
+  border-radius: 20px;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: #e9d2f4ff ;
-    color: #242038ff;
-    float: center;
+    float: left;
+    border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    border-radius: 10px;
+    background-color: #D4A276;
+    color: #FFEDD8;
+    width: 25%;
+    font-size: 15px;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #242038ff;
-    color: #e9d2f4ff;
+    background-color: #BC8A5F;
+    color: #FFEDD8;
     border-radius: none;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #242038ff;
-    color:  #f2d0a4ff;
+    background-color: #BC8A5F;
+    color:  #FFEDD8;
     border-radius: none;
   }
   
   /* Style the tab content */
   .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #e9d2f4ff;
-    border: 5px solid #242038ff;
+    overflow: hidden;
+    border: 5px solid #8B5E34;
     border-radius: 20px;
+    background-color: #D4A276;
+    color: #FFEDD8;
+    padding: 6px 12px;
   }
 
   .tabcontent {

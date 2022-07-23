@@ -9,27 +9,42 @@
 	</head>
 		
 	<body>
-		<div class="menu">
-			<div class="menu-left">
-				<h1>Huda AlBaqali</h1>
-			</div>
-			
-			<div class="menu-right">
-				<a class="active" href="https://halbaqali01.github.io"> Home </a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="HudaHome.html"> Home </a>
 				<a href="AboutMe.html"> About Me </a>
-				<a href="Projects.html"> Projects & Skills</a>
-                <a href="Work.html"> Volunteering & Work </a>
-                <a href="Contact.html"> Contact </a>
-			</div>
-			
-		</div>
+				<a href="Projects.html"> Projects</a>
+				<a href="Work.html"> Volunteering & Work </a>
+				<a href="Contact.html"> Contact </a>
+            </div>
+          </div>
+          
+          
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+          </script>
 
 		<!-- First thing visitors to the site will see, make it memorable -->
 		<div class="header">
-			<div class="col-12 col-s-12">
-				<h1>Hi! Glad to have you here! </h1>
+			<div class="header-right">
+				<span style="font-size:30px;cursor:pointer; float: right" onclick="openNav()">&#9776;</span>
 			</div>
+            <div class="header-left">
+                <h2>
+                    Huda AlBaqali
+                </h2>
+            </div>
 		</div>
+
+
+        <!-- Light Details, Quick Menu Glance -->
 		<div class="content">
             <div class="column">
                 <h2>A Quick Look into who I am</h2>
@@ -44,8 +59,9 @@
                 <h2>Quick Menu Links</h2>
                 <div class="content-menu">
                     <a href="AboutMe.html"> About Me </a>
-                    <a href="Projects.html"> Projects</a>
-                    <a href="Contact.html"> Contact </a>
+				<a href="Projects.html"> Projects & Skills</a>
+                <a href="Work.html"> Volunteering & Work </a>
+                <a href="Contact.html"> Contact </a>
                 </div>
             </div>
 		</div>
@@ -53,7 +69,8 @@
             <h2>Have a look below to get a brief look at everything I do</h2>
         </div>
 
-		<!-- Test -->
+
+        <!-- Overview Tab -->
 		<!-- Tab links -->
 		<div class="tab">
 			<button class="tablinks" onclick="openTab(event, 'Volunteer')" id="defaultOpen">Volunteering</button>

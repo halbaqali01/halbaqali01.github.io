@@ -8,67 +8,88 @@ body{
 /*********************************************/
 /* Landing Page Settings */
 
+
+
 /*********************************************/
+/* Alternative Menu Design*/
+/* The Overlay (background) */
 
-/* Menu Style Settings */
-.menu {
-    overflow: hidden;
-    background-color: #D4A276;
-    color: #FFEDD8;
-    border: 5px solid #8B5E34;
-    border-radius: 20px;
+/* Position the content inside the overlay */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(111, 69, 24);
+  background-color: rgba(111, 69, 24, 0.8);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
-.menu a {
-    background-color: #D4A276 ;
-    color: #FFEDD8;
-    float: center;
-    border: none ;
-    outline: none;
-    cursor: pointer;
-    padding: 6px 12px;
-    transition: 0.3s;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-    border-radius: 20px;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.menu a:hover{
-    background-color: #BC8A5F;
-    color: #e9d2f4ff;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #F3D5B5;
+  display: block;
+  transition: 0.3s;
 }
 
-.menu a.active {
-    background-color: #BC8A5F;
-    color: #FFEDD8;
+.overlay a:hover, .overlay a:focus {
+  color: #FFEDD8;
+  text-decoration: underline solid #FFEDD8 2px;
 }
 
-.menu-right{
-    float: right;
-    padding: 16px;
-    margin-top: 10px;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.menu-left{
-    float: left;
-    font-size: 15px;
-    margin-left: 25px;
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
+
+
+
 /*********************************************/
 /* Header Style Settings */
 .header {
-    color:  #6F4518;
+  background-color: #D4A276;
+    color:  #FFEDD8;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
     text-align: left;
     margin-top: 30px;
 }
-.header h1{
+.header-right{
     color: #6F4518;
-    font-size: 50px;
-    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header-left{
+  color: #6F4518;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .header p{
@@ -76,12 +97,9 @@ body{
 }
 /* Footer Style Settings */
 .bar {
-    background-color: #e9d2f4ff;
     padding: 5px;
     text-align: center;
     margin-top: 10px;
-    border: 5px solid #242038ff;
-    border-radius: 20px;
 }
 /*********************************************/
 /* Content Style Settings*/
@@ -103,28 +121,25 @@ body{
     width: 50%;
 }
 
-.column-menu{
-  width: 100px;
-}
-
-.column-menu a {
+.column a {
   background-color: #D4A276 ;
-  color: #FFEDD8;
-  float: center;
-  border: none ;
-  outline: none;
-  cursor: pointer;
-  padding: 6px 12px;
-  transition: 0.3s;
-  font-family: inherit;
-  font-size: inherit;
-  text-decoration: none;
-  border-radius: 20px;
+    color: #FFEDD8;
+    float: center;
+    border: none ;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 12px;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    border-radius: 20px;
+    flex: content;
 }
 
-.column-menu a:hover{
+.column a:hover{
   background-color: #BC8A5F;
-  color: #e9d2f4ff;
+  color: #FFEDD8;;
 }
 
 /*********************************************/
@@ -136,8 +151,9 @@ body{
 .tab {
   overflow: hidden;
   background-color: #D4A276;
+  border: 2px solid #8B5E34;
+  border-radius: 5px;
   color: #FFEDD8;
-  border: 5px solid #8B5E34;
   border-radius: 20px;
   }
   
@@ -172,8 +188,8 @@ body{
   /* Style the tab content */
   .tabcontent {
     overflow: hidden;
-    border: 5px solid #8B5E34;
-    border-radius: 20px;
+    border: 2px solid #8B5E34;
+    border-radius: 5px;
     background-color: #D4A276;
     color: #FFEDD8;
     padding: 6px 12px;
@@ -198,9 +214,16 @@ body{
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 
-  .menu {
+  .menu .column{
     display: block;
     width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+  .column a{
+    float: none;
+    display: block;
+    width: fit-content;
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 

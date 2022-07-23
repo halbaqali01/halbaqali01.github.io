@@ -9,7 +9,7 @@ body{
     background-image: url(Background1.jpg);
 }
 /*********************************************/
-/* Divider Style Settings */
+/* Landinng Page Settings */
 
 /*********************************************/
 
@@ -167,3 +167,12 @@ body{
     to {opacity: 1;}
   }
 /*********************************************/
+/* Adjust Screen Optimisation */
+@media screen and (max-width: 500px) {
+  .menu a{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}

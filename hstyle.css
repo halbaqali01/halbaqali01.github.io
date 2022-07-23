@@ -6,7 +6,7 @@ body{
     color: #583101;
 }
 /*********************************************/
-/* Landinng Pa Settings */
+/* Landing Page Settings */
 
 /*********************************************/
 
@@ -85,20 +85,54 @@ body{
 }
 /*********************************************/
 /* Content Style Settings*/
-.content1{
+.content{
   color:  #6F4518;
     padding: 10px;
     margin-bottom: 10px;
     text-align: left;
+    display: table;
+    width: 100%;
 }
 
-.content1 h2{
-  color: #6F4518;
-  text-align: left;
+.column{
+  color:  #6F4518;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: table-cell;
+    width: 50%;
+}
+
+.column-menu{
+  width: 100px;
+}
+
+.column-menu a {
+  background-color: #D4A276 ;
+  color: #FFEDD8;
+  float: center;
+  border: none ;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: 0.3s;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.column-menu a:hover{
+  background-color: #BC8A5F;
+  color: #e9d2f4ff;
 }
 
 /*********************************************/
 /* Style the middle tab section */
+.tab-header{
+  text-align: center;
+  margin-top: 10px;
+}
 .tab {
   overflow: hidden;
   background-color: #D4A276;
@@ -156,11 +190,27 @@ body{
   }
 /*********************************************/
 /* Adjust Screen Optimisation */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .menu a{
     float: none;
     display: block;
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+  .column{
+    display: block;
+    width: 100%;
+  }
+
+  .body{
+    display: block;
+    width: 100%;
   }
 }

@@ -4,15 +4,15 @@ body{
     font-family: 'Times New Roman', Times, serif;
     animation: fadeEffect 2s;
     color: #583101;
-    position: absolute;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  text-align: justify;
+  overflow-x: hidden;
 }
+
 /*********************************************/
 /* Scrollbar Settings */
 /* width */
@@ -123,7 +123,6 @@ html, body {
   width: 100%;
 }
 
-
 /*********************************************/
 /* Footer Style Settings */
 .bar {
@@ -135,51 +134,65 @@ html, body {
   color:  #FFEDD8;
 }
 
-
 /*********************************************/
 /* Content Style Settings*/
 .content{
-  color:  #6F4518;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  color: #583101;
+  display: block;
 }
 
 .column{
-  color:  #6F4518;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    display: block;
-    width: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  opacity: 0.7;
+  background-color: #D4A276;
+  padding: 20px;
+  border-radius: 10px;
+  word-wrap: break-word;
 }
 
-.column a {
-  background-color: #D4A276 ;
-    color: #FFEDD8;
-    float: center;
-    border: none ;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 12px;
-    transition: 0.3s;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-    border-radius: 20px;
-    flex: content;
+/*********************************************/
+/* Personal Card Settings */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+  background-color: #FFEDD8;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  color: #6F4518;
+  font-size: 18px;
 }
 
-.column a:hover{
-  background-color: #BC8A5F;
-  color: #FFEDD8;;
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #FFEDD8;
+  background-color: #583101;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #BC8A5F;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
 
 /*********************************************/
 /* Style the middle tab section */
@@ -193,6 +206,9 @@ html, body {
   border: 2px solid #8B5E34;
   border-radius: 2px;
   color: #FFEDD8;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -230,7 +246,14 @@ html, body {
     border-radius: 2px;
     background-color: #D4A276;
     color: #FFEDD8;
-    padding: 6px 12px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabcontent h3,p{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .tabcontent {
@@ -246,7 +269,12 @@ html, body {
 
 /*********************************************/
 /* Adjust Screen Optimisation */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+
+  .html, body{
+    width: 100%;
+  overflow-x: hidden;
+  }
   .column a{
     float: none;
     display: block;
@@ -258,6 +286,9 @@ html, body {
     display: block;
     width: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding: 10px;
   }
 
   .body{
@@ -269,9 +300,28 @@ html, body {
     float: inline-end;
     display: flex;
     justify-content: space-between;
-    text-align: justify;
+    text-align: left;
     width: fit-content; 
     overflow-y: auto;
+  }
+
+  .tab{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  .tabcontent{
+    margin: auto;
+    width: 100%;
+  }
+
+  .card{
+    display: block;
+    width: 50%;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

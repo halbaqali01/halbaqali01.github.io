@@ -1,9 +1,19 @@
 /* Default Body Style Settings*/
 body{
-    background-color: #F3D5B5;
+    /*background-color: #F3D5B5;*/
+    background-color:#c299ff;
+background-image:
+radial-gradient(at 57% 83%, hsla(243,73%,74%,1) 0px, transparent 50%),
+radial-gradient(at 91% 43%, hsla(273,63%,60%,1) 0px, transparent 50%),
+radial-gradient(at 31% 99%, hsla(163,78%,60%,1) 0px, transparent 50%),
+radial-gradient(at 28% 9%, hsla(233,83%,60%,1) 0px, transparent 50%),
+radial-gradient(at 18% 80%, hsla(280,77%,61%,1) 0px, transparent 50%),
+radial-gradient(at 86% 84%, hsla(337,76%,78%,1) 0px, transparent 50%),
+radial-gradient(at 71% 27%, hsla(125,66%,72%,1) 0px, transparent 50%);
+
     font-family: 'Times New Roman', Times, serif;
     animation: fadeEffect 2s;
-    color: #583101;
+    color: white;
 }
 
 html, body {
@@ -32,7 +42,7 @@ html, body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6F4518;
+  background: #A899FF;
 }
 /*********************************************/
 /* Landing Page Settings */
@@ -42,7 +52,15 @@ html, body {
 /*********************************************/
 /* Menu Design*/
 .menu {
-  background-color: #D4A276;
+  background-color:#a899ff;
+background-image:
+radial-gradient(at 62% 20%, hsla(8,89%,61%,1) 0px, transparent 50%),
+radial-gradient(at 79% 81%, hsla(358,82%,72%,1) 0px, transparent 50%),
+radial-gradient(at 12% 98%, hsla(48,64%,72%,1) 0px, transparent 50%),
+radial-gradient(at 69% 59%, hsla(353,92%,63%,1) 0px, transparent 50%),
+radial-gradient(at 17% 84%, hsla(341,74%,68%,1) 0px, transparent 50%),
+radial-gradient(at 3% 77%, hsla(215,66%,71%,1) 0px, transparent 50%),
+radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
     color:  #FFEDD8;
     margin-bottom: 10px;
     text-align: left;
@@ -50,13 +68,13 @@ html, body {
     padding: 5px;
 }
 .menu-right{
-    color: #6F4518;
+    color: white;
     margin-right: 10px;
     margin-top: 10px;
 }
 
 .menu-left{
-  color: #6F4518;
+  color: white;
   text-align: left;
 }
 
@@ -69,8 +87,8 @@ html, body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(111, 69, 24);
-  background-color: rgba(111, 69, 24, 0.8);
+  background-color: rgb(141, 127, 244);
+  background-color: rgba(141, 127, 244, 0.8);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -87,14 +105,14 @@ html, body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #F3D5B5;
+  color: rgb(210, 210, 255);
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #FFEDD8;
-  text-decoration: underline solid #FFEDD8 2px;
+  color: white;
+  text-decoration: underline solid white 2px;
 }
 
 .overlay .closebtn {

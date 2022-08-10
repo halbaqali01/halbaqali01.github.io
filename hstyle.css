@@ -50,28 +50,6 @@ html, body {
 
 /*********************************************/
 /* Menu Design*/
-.menu {
-  background-color:#a899ff;
-background-image:
-radial-gradient(at 62% 20%, hsla(8,89%,61%,1) 0px, transparent 50%),
-radial-gradient(at 79% 81%, hsla(358,82%,72%,1) 0px, transparent 50%),
-radial-gradient(at 12% 98%, hsla(48,64%,72%,1) 0px, transparent 50%),
-radial-gradient(at 69% 59%, hsla(353,92%,63%,1) 0px, transparent 50%),
-radial-gradient(at 17% 84%, hsla(341,74%,68%,1) 0px, transparent 50%),
-radial-gradient(at 3% 77%, hsla(215,66%,71%,1) 0px, transparent 50%),
-radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
-    color:  #FFEDD8;
-    margin-bottom: 10px;
-    text-align: left;
-    width: 100%;
-    padding: 5px;
-}
-.menu-right{
-    color: white;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
 .menu-icon{
   position: absolute;
   top: 20px;
@@ -139,7 +117,7 @@ radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
 /*********************************************/
 /* Header Style Settings */
 .header{
-  text-align: center;
+  display: block;
   width: 100%;
   overflow-y: auto;
   text-align: center;

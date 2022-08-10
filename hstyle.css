@@ -1,19 +1,18 @@
 /* Default Body Style Settings*/
 body{
-    /*background-color: #F3D5B5;*/
-    background-color:#c299ff;
-background-image:
-radial-gradient(at 57% 83%, hsla(243,73%,74%,1) 0px, transparent 50%),
-radial-gradient(at 91% 43%, hsla(273,63%,60%,1) 0px, transparent 50%),
-radial-gradient(at 31% 99%, hsla(163,78%,60%,1) 0px, transparent 50%),
-radial-gradient(at 28% 9%, hsla(233,83%,60%,1) 0px, transparent 50%),
-radial-gradient(at 18% 80%, hsla(280,77%,61%,1) 0px, transparent 50%),
-radial-gradient(at 86% 84%, hsla(337,76%,78%,1) 0px, transparent 50%),
-radial-gradient(at 71% 27%, hsla(125,66%,72%,1) 0px, transparent 50%);
+  background-color:#ffdb99;
+  background-image:
+  radial-gradient(at 45% 69%, hsla(292,86%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 95% 45%, hsla(247,83%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 3%, hsla(259,64%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 92% 80%, hsla(357,96%,69%,1) 0px, transparent 50%),
+  radial-gradient(at 82% 50%, hsla(278,64%,67%,1) 0px, transparent 50%),
+  radial-gradient(at 60% 77%, hsla(43,85%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 29% 26%, hsla(321,85%,61%,1) 0px, transparent 50%);
 
-    font-family: 'Times New Roman', Times, serif;
-    animation: fadeEffect 2s;
-    color: white;
+  font-family: 'Times New Roman', Times, serif;
+  animation: fadeEffect 2s;
+  color: white;
 }
 
 html, body {
@@ -73,11 +72,14 @@ radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
     margin-top: 10px;
 }
 
-.menu-left{
-  color: white;
-  text-align: left;
+.menu-icon{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  bottom: 20px;
+  font-size: 60px;
+  padding-bottom: 10;
 }
-
 /* The Overlay (background) */
 /* Position the content inside the overlay */
 .overlay {
@@ -139,6 +141,8 @@ radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
 .header{
   text-align: center;
   width: 100%;
+  overflow-y: auto;
+  text-align: center;
 }
 
 /*********************************************/
@@ -154,9 +158,12 @@ radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
 
 /*********************************************/
 /* Content Style Settings*/
-.content{
-  color: #583101;
+.maincontent{
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
   display: block;
+  width: 100%;
 }
 
 .column{
@@ -164,11 +171,19 @@ radial-gradient(at 81% 11%, hsla(227,96%,73%,1) 0px, transparent 50%);
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  opacity: 0.7;
-  background-color: #D4A276;
+  opacity: 0.8;
+  background-color: #FFD5C2;
   padding: 20px;
   border-radius: 10px;
   word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  color: #A899FF;
+}
+
+.column p{
+  color: #AF4D98;
 }
 
 /*********************************************/
@@ -220,9 +235,9 @@ button:hover, a:hover {
 }
 .tab {
   overflow: hidden;
-  background-color: #D4A276;
-  border: 2px solid #8B5E34;
-  border-radius: 2px;
+  background-color: #AF4D98;
+  border: 2px solid #AF4D98;
+  border-radius: 5px;
   color: #FFEDD8;
   width: 50%;
   margin-left: auto;
@@ -237,22 +252,22 @@ button:hover, a:hover {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    background-color: #D4A276;
+    background-color: #AF4D98;
     color: #FFEDD8;
-    width: 25%;
+    width: 33.33%;
     font-size: 17px;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #BC8A5F;
+    background-color: #c057a7;
     color: #FFEDD8;
     border-radius: none;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #BC8A5F;
+    background-color: #c057a7;
     color:  #FFEDD8;
     border-radius: none;
   }
@@ -260,13 +275,14 @@ button:hover, a:hover {
   /* Style the tab content */
   .tabcontent {
     overflow: hidden;
-    border: 2px solid #8B5E34;
-    border-radius: 2px;
-    background-color: #D4A276;
-    color: #FFEDD8;
+    border: 2px solid #AF4D98;
+    border-radius: 5px;
+    background-color: #FFD5C2;
+    color: #AF4D98;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
   }
 
   .tabcontent h3,p{
@@ -287,36 +303,42 @@ button:hover, a:hover {
 
 /*********************************************/
 /* Adjust Screen Optimisation */
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 750px) {
   .html, body{
     width: 100%;
-  overflow-x: hidden;
-  }
-  .column a{
-    float: none;
+    overflow-x: hidden;
     display: block;
-    text-align: left;
+    overflow-y: auto;
+  }
+
+  .maincontent{
+    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
     overflow-y: auto;
   }
 
   .column{
-    display: block;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    word-wrap: break-word;
-    padding: 10px;
+    margin: auto;
+    width: 75%;
   }
 
-  .body{
+  .header{
     display: block;
     width: 100%;
     overflow-y: auto;
+    text-align: center;
   }
+
+  .tab-header{
+    overflow-x: hidden;
+    display: block;
+    overflow-y: auto;
+  }
+
   .tab button{
     float: inline-end;
-    display: flex;
+    display: inline;
     justify-content: space-between;
     text-align: left;
     width: fit-content; 
@@ -325,18 +347,18 @@ button:hover, a:hover {
 
   .tab{
     margin: auto;
-    width: 100%;
+    width: 85%;
     text-align: left;
   }
 
   .tabcontent{
     margin: auto;
-    width: 100%;
+    width: 85%;
   }
 
   .card{
     display: block;
-    width: 50%;
+    width: 70%;
     overflow-y: auto;
     margin-left: auto;
     margin-right: auto;
